@@ -20,11 +20,11 @@ The Bare Server backend used is from [tomphttp/bare-server-node/examples/static.
 
 
 ## Config
-To change the HTTP server port set the environment variable variable `PORT`.
+To change the HTTP server port set the environment variable variable `PORT` (the default is 8080).
 
 ### SSL Config
 To enable SSL place your certificates in the SSL folder.
 
 The certificate should be named `cert.pem` and the private key named `key.pem`.
 
-When SSL is enabled port 443 will be used by default instead of 8080.
+When SSL is enabled port 443 will be used as the default.

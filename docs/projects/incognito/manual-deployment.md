@@ -40,9 +40,12 @@ docker pull ghcr.io/amethystnetwork-dev/incognito:latest
 ```
 
 And then you can start a docker container:
+
 ```bash
-docker run -p 8080:8080 ghcr.io/amethystnetwork-dev/incognito
+docker run --detach --restart unless-stopped --expose 8080:8080 ghcr.io/amethystnetwork-dev/incognito
 ```
+
+To run on port 80 you can change expose to `--expose 80:8080`
 
 ## Terminal with Deno
 

@@ -2,20 +2,26 @@
 
 How to custom themes and games
 
+:::info
+
+Games are located in the [github.com/amethystnetwork-dev/Incognito-gfiles](https://github.com/amethystnetwork-dev/Incognito-gfiles) repo, you need to `git clone` (or fork) it and link it.
+
+:::
+
 ## Add Games
 
 More games can be added to Incognito by editing gs.json in a format, displayed in this example:
 
 ```json
 {
-  "img": "./img/gs/game.jpg",
+  "img": "./source/img/gs/game.jpg",
   "location": "./source/gameloc/",
   "category": "Category",
   "title": "Game Title"
 },
 ````
 
-`img` images are only located in `/img/gs/`.
+`img` images are only located in `Incognito-gfiles/static/gs/`.
 
 Category should be set for the game you are adding
 
@@ -37,8 +43,8 @@ Working example:
 
 ```json
 {
-  "img": "./img/gs/flappybird.jpg",
-  "location": "/source/flappybird/",
+  "img": "./source/img/gs/flappybird.jpg",
+  "location": "./source/flappybird/",
   "category": "web",
   "title": "Flappy Bird"
 },

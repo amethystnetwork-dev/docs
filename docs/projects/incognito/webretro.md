@@ -26,7 +26,7 @@ You can add webretro ROMS to the games page just like normal games, but with thi
 
 ```json
 {
-    "img": "./img/gs/game.jpg",
+    "img": "./source/img/gs/game.jpg",
     "location": "./source/webretro/?core=autodetect&rom=romfile",
     "category": "Category",
     "title": "Game Title"

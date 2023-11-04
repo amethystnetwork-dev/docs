@@ -3,20 +3,11 @@ sidebar_position: 2
 ---
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import { createRef } from 'react';
-const i = createRef();
-async function e() {
-  if(!i.current) return;
-  const res = await fetch("https://myip.wtf/json");
-  const json = await res.json();
-  i.current.innerText = json["YourFuckingIPAddress"]
-}
+import IP from "@site/src/components/IP.jsx";
 
 # About Replit
 
 We have a "Deploy to Replit" button for those people that like Replit. We do not recommend using Replit.
-
-<iframe src="https://hub.alienhub.xyz/show?utm_medium=amethystnetwork" scrolling="no" width="450" height="150"></iframe>
 
 ## Why is Replit bad for proxies?
 
@@ -38,14 +29,7 @@ Or, watch this video that may or may not help you:
 
 By clicking the below button, I Acknowledge that I have read and understood the above text.
 
-<BrowserOnly>{() => {
-  e();
-  return (
-    <>
-      <span>For all we know, your IP could be </span><span title="it's public" ref={i}>0.0.0.0</span>
-    </>
-  )
-}}</BrowserOnly>
+<span>For all we know, your IP could be </span><span title="it's public"><BrowserOnly>{() => <IP />}</BrowserOnly></span>
 
 <br />
 <br />
